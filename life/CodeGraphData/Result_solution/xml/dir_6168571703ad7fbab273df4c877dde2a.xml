@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_6168571703ad7fbab273df4c877dde2a" kind="dir">
+    <compoundname>C:/Users/Schattencheg/source/Repos/Life/Life</compoundname>
+    <innerdir refid="dir_487644abaac7f40540abbd3f576533cf">C:/Users/Schattencheg/source/Repos/Life/Life/Properties</innerdir>
+    <innerdir refid="dir_b367435e1af54fbc10a8c86f12639b64">C:/Users/Schattencheg/source/Repos/Life/Life/v1</innerdir>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Schattencheg/source/Repos/Life/Life/"/>
+  </compounddef>
+</doxygen>

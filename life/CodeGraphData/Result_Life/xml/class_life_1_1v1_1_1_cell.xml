@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_life_1_1v1_1_1_cell" kind="class" prot="public">
+    <compoundname>Life::v1::Cell</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_life_1_1v1_1_1_cell_1aa12e123c7f0fa8b1dee4e1055cbe1a16" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Life.v1.Cell._x</definition>
+        <argsstring></argsstring>
+        <name>_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="32" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_life_1_1v1_1_1_cell_1a9c72971ac537061cb4c257810ea8a76b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Life.v1.Cell._y</definition>
+        <argsstring></argsstring>
+        <name>_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="33" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_life_1_1v1_1_1_cell_1a7cb652abf6e50f81f709d00fa0bf0a09" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Life.v1.Cell._alive</definition>
+        <argsstring></argsstring>
+        <name>_alive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="34" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_life_1_1v1_1_1_cell_1a89c13a7f805270724c0516c11f5e982f" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_life_1_1v1_1_1_cell" kindref="compound">Cell</ref> &gt;</type>
+        <definition>List&lt;Cell&gt; Life.v1.Cell._neighbours</definition>
+        <argsstring></argsstring>
+        <name>_neighbours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="35" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_life_1_1v1_1_1_cell_1a52d64bc28eb7ce4b87b45d9558c4b796" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool Life.v1.Cell.Alive</definition>
+        <argsstring></argsstring>
+        <name>Alive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="64" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_life_1_1v1_1_1_cell_1a6e648df753e8c0882d411c7cda39f41b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Life.v1.Cell.X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="81" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_life_1_1v1_1_1_cell_1a7fcb92da61b4742804dd82c41be7d153" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Life.v1.Cell.Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="82" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_life_1_1v1_1_1_cell_1a57d495ac06b89ffbb2d72f50f49bd76f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Life.v1.Cell.Cell</definition>
+        <argsstring>(int x, int y, bool alive=false)</argsstring>
+        <name>Cell</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>alive</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="37" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="37" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_life_1_1v1_1_1_cell_1a00d37651bc32323de9e57e9dbac6efe3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Life.v1.Cell.AliveNeighboursCount</definition>
+        <argsstring>()</argsstring>
+        <name>AliveNeighboursCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="45" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="45" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_life_1_1v1_1_1_cell_1a2a4be87421249ff4462c89ebb859d7da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Life.v1.Cell.PrintAliveNeighbours</definition>
+        <argsstring>()</argsstring>
+        <name>PrintAliveNeighbours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="53" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="53" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_life_1_1v1_1_1_cell_1aa47854de02bdec08e1c6d36d1e9e2d35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Life.v1.Cell.AddNeighbour</definition>
+        <argsstring>(ref Cell cell)</argsstring>
+        <name>AddNeighbour</name>
+        <param>
+          <type>ref <ref refid="class_life_1_1v1_1_1_cell" kindref="compound">Cell</ref></type>
+          <declname>cell</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="70" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_life_1_1v1_1_1_cell_1a6babe198006b78c927c08a16f2b37a07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Life.v1.Cell.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="76" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="76" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="31" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="30" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_life_1_1v1_1_1_cell_1a7cb652abf6e50f81f709d00fa0bf0a09" prot="private" virt="non-virtual"><scope>Life::v1::Cell</scope><name>_alive</name></member>
+      <member refid="class_life_1_1v1_1_1_cell_1a89c13a7f805270724c0516c11f5e982f" prot="private" virt="non-virtual"><scope>Life::v1::Cell</scope><name>_neighbours</name></member>
+      <member refid="class_life_1_1v1_1_1_cell_1aa12e123c7f0fa8b1dee4e1055cbe1a16" prot="private" virt="non-virtual"><scope>Life::v1::Cell</scope><name>_x</name></member>
+      <member refid="class_life_1_1v1_1_1_cell_1a9c72971ac537061cb4c257810ea8a76b" prot="private" virt="non-virtual"><scope>Life::v1::Cell</scope><name>_y</name></member>
+      <member refid="class_life_1_1v1_1_1_cell_1aa47854de02bdec08e1c6d36d1e9e2d35" prot="public" virt="non-virtual"><scope>Life::v1::Cell</scope><name>AddNeighbour</name></member>
+      <member refid="class_life_1_1v1_1_1_cell_1a52d64bc28eb7ce4b87b45d9558c4b796" prot="public" virt="non-virtual"><scope>Life::v1::Cell</scope><name>Alive</name></member>
+      <member refid="class_life_1_1v1_1_1_cell_1a00d37651bc32323de9e57e9dbac6efe3" prot="public" virt="non-virtual"><scope>Life::v1::Cell</scope><name>AliveNeighboursCount</name></member>
+      <member refid="class_life_1_1v1_1_1_cell_1a57d495ac06b89ffbb2d72f50f49bd76f" prot="public" virt="non-virtual"><scope>Life::v1::Cell</scope><name>Cell</name></member>
+      <member refid="class_life_1_1v1_1_1_cell_1a2a4be87421249ff4462c89ebb859d7da" prot="public" virt="non-virtual"><scope>Life::v1::Cell</scope><name>PrintAliveNeighbours</name></member>
+      <member refid="class_life_1_1v1_1_1_cell_1a6babe198006b78c927c08a16f2b37a07" prot="public" virt="non-virtual"><scope>Life::v1::Cell</scope><name>ToString</name></member>
+      <member refid="class_life_1_1v1_1_1_cell_1a6e648df753e8c0882d411c7cda39f41b" prot="public" virt="non-virtual"><scope>Life::v1::Cell</scope><name>X</name></member>
+      <member refid="class_life_1_1v1_1_1_cell_1a7fcb92da61b4742804dd82c41be7d153" prot="public" virt="non-virtual"><scope>Life::v1::Cell</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

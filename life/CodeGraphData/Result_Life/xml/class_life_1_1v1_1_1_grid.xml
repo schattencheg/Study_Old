@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_life_1_1v1_1_1_grid" kind="class" prot="public">
+    <compoundname>Life::v1::Grid</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_life_1_1v1_1_1_grid_1ac3fbd48480ff260ab11591a563f0b09a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Life.v1.Grid.N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="87" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_life_1_1v1_1_1_grid_1a8c42d5ac2abd9df3727785bbd0ef639f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Life.v1.Grid._gen</definition>
+        <argsstring></argsstring>
+        <name>_gen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="88" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_life_1_1v1_1_1_grid_1afb0be2bd308e95c6df2ae99d604e87fd" prot="private" static="no" mutable="no">
+        <type><ref refid="class_life_1_1v1_1_1_cell" kindref="compound">Cell</ref>[,]</type>
+        <definition>Cell [,] Life.v1.Grid._grid</definition>
+        <argsstring></argsstring>
+        <name>_grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="89" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_life_1_1v1_1_1_grid_1a8ed0505da8bc781979b655ae6a2cb5a4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Life.v1.Grid.Gen</definition>
+        <argsstring></argsstring>
+        <name>Gen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="250" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_life_1_1v1_1_1_grid_1a18b2b7df0e54160b59edcf393d80debf" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Life.v1.Grid.Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="252" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_life_1_1v1_1_1_grid_1ad8948716dbfa4cfacf4eca95d1ebcf5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Life.v1.Grid.Grid</definition>
+        <argsstring>(int gen, int n=10)</argsstring>
+        <name>Grid</name>
+        <param>
+          <type>int</type>
+          <declname>gen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="91" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="91" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_life_1_1v1_1_1_grid_1aa5fd776defd7a76c364d494452540693" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Life.v1.Grid.Grid</definition>
+        <argsstring>(Grid grid)</argsstring>
+        <name>Grid</name>
+        <param>
+          <type><ref refid="class_life_1_1v1_1_1_grid" kindref="compound">Grid</ref></type>
+          <declname>grid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="107" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="107" bodyend="140"/>
+        <references refid="class_life_1_1v1_1_1_constants_1a5805ef1d668470bdcb1b661b029221fc" compoundref="_life__v__0__1_8cs" startline="291">Life.v1.Constants.CountToBorn</references>
+        <references refid="class_life_1_1v1_1_1_constants_1a404c04a28998128fedbe2bd1eca22769" compoundref="_life__v__0__1_8cs" startline="293">Life.v1.Constants.CountToStayAliveMax</references>
+        <references refid="class_life_1_1v1_1_1_constants_1a2d1e8c82823b0eba816b1abf819db3d1" compoundref="_life__v__0__1_8cs" startline="292">Life.v1.Constants.CountToStayAliveMin</references>
+      </memberdef>
+      <memberdef kind="function" id="class_life_1_1v1_1_1_grid_1a6c7dee5db9a58eab6d3401b663f125fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_life_1_1v1_1_1_cell" kindref="compound">Cell</ref></type>
+        <definition>Cell Life.v1.Grid.GetCell</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>GetCell</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="240" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_life_1_1v1_1_1_grid_1abab6ca7b34896ac4b313db2330402469" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_life_1_1v1_1_1_cell" kindref="compound">Cell</ref>[,]</type>
+        <definition>Cell [,] Life.v1.Grid.Cells</definition>
+        <argsstring>()</argsstring>
+        <name>Cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="245" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_life_1_1v1_1_1_grid_1a123c875bb05f2419fd35924c4a25fadf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string Life.v1.Grid.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="263" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="263" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="class_life_1_1v1_1_1_grid_1ab1a251f68fddd59b5c5019e13be0d667" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Life.v1.Grid.Print</definition>
+        <argsstring>()</argsstring>
+        <name>Print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="270" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="270" bodyend="285"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_life_1_1v1_1_1_grid_1ac07208cb25cd9623876d35d3dd610be9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Life.v1.Grid.FillNeighbours</definition>
+        <argsstring>()</argsstring>
+        <name>FillNeighbours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="142" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="142" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_life_1_1v1_1_1_grid_1a119fb991195484a432efcbdddb588e56" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Life.v1.Grid.SetInitial</definition>
+        <argsstring>(int regime=0)</argsstring>
+        <name>SetInitial</name>
+        <param>
+          <type>int</type>
+          <declname>regime</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="165" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="165" bodyend="238"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>Life.v1.Cell</label>
+        <link refid="class_life_1_1v1_1_1_cell"/>
+      </node>
+      <node id="5">
+        <label>Life.v1.Grid</label>
+        <link refid="class_life_1_1v1_1_1_grid"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_grid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="86" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="85" bodyend="286"/>
+    <listofallmembers>
+      <member refid="class_life_1_1v1_1_1_grid_1a8c42d5ac2abd9df3727785bbd0ef639f" prot="private" virt="non-virtual"><scope>Life::v1::Grid</scope><name>_gen</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1afb0be2bd308e95c6df2ae99d604e87fd" prot="private" virt="non-virtual"><scope>Life::v1::Grid</scope><name>_grid</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1abab6ca7b34896ac4b313db2330402469" prot="public" virt="non-virtual"><scope>Life::v1::Grid</scope><name>Cells</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1a18b2b7df0e54160b59edcf393d80debf" prot="public" virt="non-virtual"><scope>Life::v1::Grid</scope><name>Count</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1ac07208cb25cd9623876d35d3dd610be9" prot="private" virt="non-virtual"><scope>Life::v1::Grid</scope><name>FillNeighbours</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1a8ed0505da8bc781979b655ae6a2cb5a4" prot="public" virt="non-virtual"><scope>Life::v1::Grid</scope><name>Gen</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1a6c7dee5db9a58eab6d3401b663f125fb" prot="public" virt="non-virtual"><scope>Life::v1::Grid</scope><name>GetCell</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1ad8948716dbfa4cfacf4eca95d1ebcf5a" prot="public" virt="non-virtual"><scope>Life::v1::Grid</scope><name>Grid</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1aa5fd776defd7a76c364d494452540693" prot="public" virt="non-virtual"><scope>Life::v1::Grid</scope><name>Grid</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1ac3fbd48480ff260ab11591a563f0b09a" prot="private" virt="non-virtual"><scope>Life::v1::Grid</scope><name>N</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1ab1a251f68fddd59b5c5019e13be0d667" prot="public" virt="non-virtual"><scope>Life::v1::Grid</scope><name>Print</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1a119fb991195484a432efcbdddb588e56" prot="private" virt="non-virtual"><scope>Life::v1::Grid</scope><name>SetInitial</name></member>
+      <member refid="class_life_1_1v1_1_1_grid_1a123c875bb05f2419fd35924c4a25fadf" prot="public" virt="non-virtual"><scope>Life::v1::Grid</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

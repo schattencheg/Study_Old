@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_life_1_1v1_1_1_life__v__0__1" kind="class" prot="public">
+    <compoundname>Life::v1::Life_v_0_1</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_life_1_1v1_1_1_life__v__0__1_1a5ed6992168eebbe03313334d40996fc6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_life_1_1v1_1_1_grid" kindref="compound">Grid</ref></type>
+        <definition>Grid Life.v1.Life_v_0_1._grid</definition>
+        <argsstring></argsstring>
+        <name>_grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="12" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_life_1_1v1_1_1_life__v__0__1_1a61ff0657a6c3c0c706510230e4db3538" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Life.v1.Life_v_0_1.Life_v_0_1</definition>
+        <argsstring>()</argsstring>
+        <name>Life_v_0_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="13" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="13" bodyend="17"/>
+        <references refid="class_life_1_1v1_1_1_constants_1a1c6a1942e5619f6ad85de0e18bd56a98" compoundref="_life__v__0__1_8cs" startline="290">Life.v1.Constants.N</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_life_1_1v1_1_1_life__v__0__1_1ac3739c216c5d6ee4a63f8a6ead23389b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Life.v1.Life_v_0_1.StartLife</definition>
+        <argsstring>()</argsstring>
+        <name>StartLife</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="18" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="18" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>Life.v1.Cell</label>
+        <link refid="class_life_1_1v1_1_1_cell"/>
+      </node>
+      <node id="8">
+        <label>Life.v1.Life_v_0_1</label>
+        <link refid="class_life_1_1v1_1_1_life__v__0__1"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>_grid</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Life.v1.Grid</label>
+        <link refid="class_life_1_1v1_1_1_grid"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>_grid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" line="11" column="1" bodyfile="C:/Users/Schattencheg/source/Repos/Life/Life/v1/Life_v_0_1.cs" bodystart="10" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_life_1_1v1_1_1_life__v__0__1_1a5ed6992168eebbe03313334d40996fc6" prot="private" virt="non-virtual"><scope>Life::v1::Life_v_0_1</scope><name>_grid</name></member>
+      <member refid="class_life_1_1v1_1_1_life__v__0__1_1a61ff0657a6c3c0c706510230e4db3538" prot="public" virt="non-virtual"><scope>Life::v1::Life_v_0_1</scope><name>Life_v_0_1</name></member>
+      <member refid="class_life_1_1v1_1_1_life__v__0__1_1ac3739c216c5d6ee4a63f8a6ead23389b" prot="private" virt="non-virtual"><scope>Life::v1::Life_v_0_1</scope><name>StartLife</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

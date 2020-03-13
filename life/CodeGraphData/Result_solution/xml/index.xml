@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_life_1_1v1_1_1_cell" kind="class"><name>Life::v1::Cell</name>
+    <member refid="class_life_1_1v1_1_1_cell_1aa12e123c7f0fa8b1dee4e1055cbe1a16" kind="variable"><name>_x</name></member>
+    <member refid="class_life_1_1v1_1_1_cell_1a9c72971ac537061cb4c257810ea8a76b" kind="variable"><name>_y</name></member>
+    <member refid="class_life_1_1v1_1_1_cell_1a7cb652abf6e50f81f709d00fa0bf0a09" kind="variable"><name>_alive</name></member>
+    <member refid="class_life_1_1v1_1_1_cell_1a89c13a7f805270724c0516c11f5e982f" kind="variable"><name>_neighbours</name></member>
+    <member refid="class_life_1_1v1_1_1_cell_1a52d64bc28eb7ce4b87b45d9558c4b796" kind="property"><name>Alive</name></member>
+    <member refid="class_life_1_1v1_1_1_cell_1a6e648df753e8c0882d411c7cda39f41b" kind="property"><name>X</name></member>
+    <member refid="class_life_1_1v1_1_1_cell_1a7fcb92da61b4742804dd82c41be7d153" kind="property"><name>Y</name></member>
+    <member refid="class_life_1_1v1_1_1_cell_1a57d495ac06b89ffbb2d72f50f49bd76f" kind="function"><name>Cell</name></member>
+    <member refid="class_life_1_1v1_1_1_cell_1a00d37651bc32323de9e57e9dbac6efe3" kind="function"><name>AliveNeighboursCount</name></member>
+    <member refid="class_life_1_1v1_1_1_cell_1a2a4be87421249ff4462c89ebb859d7da" kind="function"><name>PrintAliveNeighbours</name></member>
+    <member refid="class_life_1_1v1_1_1_cell_1aa47854de02bdec08e1c6d36d1e9e2d35" kind="function"><name>AddNeighbour</name></member>
+    <member refid="class_life_1_1v1_1_1_cell_1a6babe198006b78c927c08a16f2b37a07" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_life_1_1v1_1_1_constants" kind="class"><name>Life::v1::Constants</name>
+    <member refid="class_life_1_1v1_1_1_constants_1a1c6a1942e5619f6ad85de0e18bd56a98" kind="variable"><name>N</name></member>
+    <member refid="class_life_1_1v1_1_1_constants_1a5805ef1d668470bdcb1b661b029221fc" kind="variable"><name>CountToBorn</name></member>
+    <member refid="class_life_1_1v1_1_1_constants_1a2d1e8c82823b0eba816b1abf819db3d1" kind="variable"><name>CountToStayAliveMin</name></member>
+    <member refid="class_life_1_1v1_1_1_constants_1a404c04a28998128fedbe2bd1eca22769" kind="variable"><name>CountToStayAliveMax</name></member>
+  </compound>
+  <compound refid="class_life_1_1v1_1_1_grid" kind="class"><name>Life::v1::Grid</name>
+    <member refid="class_life_1_1v1_1_1_grid_1ac3fbd48480ff260ab11591a563f0b09a" kind="variable"><name>N</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1a8c42d5ac2abd9df3727785bbd0ef639f" kind="variable"><name>_gen</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1afb0be2bd308e95c6df2ae99d604e87fd" kind="variable"><name>_grid</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1a8ed0505da8bc781979b655ae6a2cb5a4" kind="property"><name>Gen</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1a18b2b7df0e54160b59edcf393d80debf" kind="property"><name>Count</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1ad8948716dbfa4cfacf4eca95d1ebcf5a" kind="function"><name>Grid</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1aa5fd776defd7a76c364d494452540693" kind="function"><name>Grid</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1a6c7dee5db9a58eab6d3401b663f125fb" kind="function"><name>GetCell</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1abab6ca7b34896ac4b313db2330402469" kind="function"><name>Cells</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1a123c875bb05f2419fd35924c4a25fadf" kind="function"><name>ToString</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1ab1a251f68fddd59b5c5019e13be0d667" kind="function"><name>Print</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1ac07208cb25cd9623876d35d3dd610be9" kind="function"><name>FillNeighbours</name></member>
+    <member refid="class_life_1_1v1_1_1_grid_1a119fb991195484a432efcbdddb588e56" kind="function"><name>SetInitial</name></member>
+  </compound>
+  <compound refid="class_life_1_1v1_1_1_life__v__0__1" kind="class"><name>Life::v1::Life_v_0_1</name>
+    <member refid="class_life_1_1v1_1_1_life__v__0__1_1a5ed6992168eebbe03313334d40996fc6" kind="variable"><name>_grid</name></member>
+    <member refid="class_life_1_1v1_1_1_life__v__0__1_1a61ff0657a6c3c0c706510230e4db3538" kind="function"><name>Life_v_0_1</name></member>
+    <member refid="class_life_1_1v1_1_1_life__v__0__1_1ac3739c216c5d6ee4a63f8a6ead23389b" kind="function"><name>StartLife</name></member>
+  </compound>
+  <compound refid="class_life_1_1_program" kind="class"><name>Life::Program</name>
+    <member refid="class_life_1_1_program_1ac9f7ec91c1292c6f3346bb7ba32b750a" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="namespace_life" kind="namespace"><name>Life</name>
+  </compound>
+  <compound refid="namespace_life_1_1v1" kind="namespace"><name>Life::v1</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_life__v__0__1_8cs" kind="file"><name>Life_v_0_1.cs</name>
+  </compound>
+  <compound refid="dir_6168571703ad7fbab273df4c877dde2a" kind="dir"><name>C:/Users/Schattencheg/source/Repos/Life/Life</name>
+  </compound>
+  <compound refid="dir_fc688ecc0d0f250750f8357a788af73d" kind="dir"><name>C:/Users/Schattencheg/source/Repos/Life</name>
+  </compound>
+  <compound refid="dir_487644abaac7f40540abbd3f576533cf" kind="dir"><name>C:/Users/Schattencheg/source/Repos/Life/Life/Properties</name>
+  </compound>
+  <compound refid="dir_205aed4297c1d8013b7a48baa99701b7" kind="dir"><name>C:/Users/Schattencheg/source/Repos</name>
+  </compound>
+  <compound refid="dir_973ec52184ae009167ac898c2bb11c04" kind="dir"><name>C:/Users/Schattencheg</name>
+  </compound>
+  <compound refid="dir_d695dabf7b6b75a947cb5ed7d23aab66" kind="dir"><name>C:/Users/Schattencheg/source</name>
+  </compound>
+  <compound refid="dir_8ceffd4ee35c3518d4e8bdc7e638efe8" kind="dir"><name>C:/Users</name>
+  </compound>
+  <compound refid="dir_b367435e1af54fbc10a8c86f12639b64" kind="dir"><name>C:/Users/Schattencheg/source/Repos/Life/Life/v1</name>
+  </compound>
+</doxygenindex>
