@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28902.138
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Offline", "StuffTorrProj\Offline.csproj", "{8B187605-54B4-448F-87E6-AB7C8993E36F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Online", "Online\Online.csproj", "{8FDB35C3-B063-4736-85DC-716E45B72908}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B187605-54B4-448F-87E6-AB7C8993E36F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B187605-54B4-448F-87E6-AB7C8993E36F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B187605-54B4-448F-87E6-AB7C8993E36F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B187605-54B4-448F-87E6-AB7C8993E36F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FDB35C3-B063-4736-85DC-716E45B72908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FDB35C3-B063-4736-85DC-716E45B72908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FDB35C3-B063-4736-85DC-716E45B72908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FDB35C3-B063-4736-85DC-716E45B72908}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E956B82-9B48-4601-B19D-89ED81B2BE79}
+	EndGlobalSection
+EndGlobal

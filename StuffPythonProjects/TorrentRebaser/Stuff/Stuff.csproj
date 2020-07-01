@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35FB6CA8-06C4-4843-9450-CFC513E32082}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Stuff</RootNamespace>
+    <AssemblyName>Stuff</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NodaTime">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\NodaTime.dll</HintPath>
+    </Reference>
+    <Reference Include="Python.Runtime">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\Python.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Algorithm">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.Algorithm.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Algorithm.CSharp">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.Algorithm.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Algorithm.Framework">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.Algorithm.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Algorithm.Python">
+      <HintPath>E:\Work\QuantConnect\Lean-master\Launcher\bin\Debug\QuantConnect.Algorithm.Python.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.AlgorithmFactory">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.AlgorithmFactory.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Api">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Brokerages">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.Brokerages.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Common">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Configuration">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Indicators">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.Indicators.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Lean.Engine">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.Lean.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Logging">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="QuantConnect.Messaging">
+      <HintPath>E:\Work\QuantConnect\Launcher\bin\Debug\QuantConnect.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="QuantConnect\BhavenAndHarit\Algo3.cs" />
+    <Compile Include="QuantConnect\Portfolio\AdaptiveAssetAllocation.cs" />
+    <Compile Include="QuantConnect\Portfolio\Assets.cs" />
+    <Compile Include="QuantConnect\Portfolio\BetaConvexity.cs" />
+    <Compile Include="QuantConnect\Portfolio\DualMomentumDrGary.cs" />
+    <Compile Include="QuantConnect\Portfolio\PLMACDStrategy.cs" />
+    <Compile Include="QuantConnect\Portfolio\PL_Portfolio_Optimization.cs" />
+    <Compile Include="QuantConnect\Portfolio\PL_Universe_Selection.cs" />
+    <Compile Include="QuantConnect\Portfolio\Portfolio.cs" />
+    <Compile Include="QuantConnect\Portfolio\SwitchingStrategy.cs" />
+    <Compile Include="QuantConnect\Portfolio\TacticalPermanentPortfolio.cs" />
+    <Compile Include="QuantConnect\Portfolio\ThreeWayModel.cs" />
+    <Compile Include="QuantConnect\Portfolio\_PL_Universe_Selection.cs" />
+    <Compile Include="QuantConnect\RangeBarStrategyPSARv1\Assets\MTRealization.cs" />
+    <Compile Include="QuantConnect\RangeBarStrategyPSARv1\Assets\PSARb.cs" />
+    <Compile Include="QuantConnect\RangeBarStrategyPSARv1\Assets\RangeBarConsolidatorBackup.cs" />
+    <Compile Include="QuantConnect\RangeBarStrategyPSARv1\Assets\TestBarsCompiler.cs" />
+    <Compile Include="QuantConnect\RangeBarStrategyPSARv1\ConstantCashSlippageModel.cs" />
+    <Compile Include="QuantConnect\RangeBarStrategyPSARv1\EnhancedSymbol.cs" />
+    <Compile Include="QuantConnect\RangeBarStrategyPSARv1\RangeBar.cs" />
+    <Compile Include="QuantConnect\RangeBarStrategyPSARv1\RangeBarConsolidator.cs" />
+    <Compile Include="QuantConnect\RangeBarStrategyPSARv1\RangeKeltnerChannels.cs" />
+    <Compile Include="QuantConnect\RangeBarStrategyPSARv1\RangeStrategy.cs" />
+    <Compile Include="QuantConnect\RangeBarStrategyPSARv1\TradeList.cs" />
+    <Compile Include="QuantConnect\ThinkOrSwim\VWAP\EnhancedSymbol.cs" />
+    <Compile Include="QuantConnect\ThinkOrSwim\VWAP\RangeBarConsolidator.cs" />
+    <Compile Include="QuantConnect\ThinkOrSwim\VWAP\VWAP.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QuantConnect\Python\Flipper20\main.py" />
+    <Content Include="QuantConnect\Python\OptimizationFromPredefinedList.py" />
+    <Content Include="QuantConnect\Python\PairSwitching.py" />
+    <Content Include="QuantConnect\Python\ThinkOrSwim\VWAP\BarExtractorConsolidatorCheck.py" />
+    <Content Include="QuantConnect\Python\ThinkOrSwim\VWAP\BarExtractorFullStrategyEnhancedSymbol.py" />
+    <Content Include="QuantConnect\Python\ThinkOrSwim\VWAP\BarExtractorFullStrategyMain.py" />
+    <Content Include="QuantConnect\Python\ThinkOrSwim\VWAP\enh.txt" />
+    <Content Include="QuantConnect\Python\ThinkOrSwim\VWAP\EnhancedSymbol.py" />
+    <Content Include="QuantConnect\Python\ThinkOrSwim\VWAP\EnhancedSymbolConsolidator.py" />
+    <Content Include="QuantConnect\Python\ThinkOrSwim\VWAP\LAST_COMMENTMAIN.txt" />
+    <Content Include="QuantConnect\Python\ThinkOrSwim\VWAP\LAST_COMMENT_ENH.txt" />
+    <Content Include="QuantConnect\Python\ThinkOrSwim\VWAP\main.py" />
+    <Content Include="QuantConnect\Python\ThinkOrSwim\VWAP\_enhdonotdelete.txt" />
+    <Content Include="QuantConnect\Python\ThinkOrSwim\VWAP\_enhLast.txt" />
+    <Content Include="QuantConnect\RangeBarStrategyPSARv1\Description.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QuantConnect\Python\ThinkOrSwim\VWAP\ConsolidatedBarsDay.csv" />
+    <None Include="QuantConnect\Python\ThinkOrSwim\VWAP\VWAPStrategy.doc" />
+    <None Include="QuantConnect\Python\ThinkOrSwim\VWAP\Week1ConsolidatedBarsDay.csv" />
+    <None Include="QuantConnect\Python\ThinkOrSwim\VWAP\Week1ConsolidatedBarsHour.csv" />
+    <None Include="QuantConnect\Python\ThinkOrSwim\VWAP\Week2ConsolidatedBarsDay.csv" />
+    <None Include="QuantConnect\Python\ThinkOrSwim\VWAP\Week2ConsolidatedBarsHour.csv" />
+    <None Include="QuantConnect\RangeBarStrategyPSARv1\RangeBarStrategyPSARv1.docx" />
+    <None Include="QuantConnect\RangeBarStrategyPSARv1\RangeBarStrategyPSARv1.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
