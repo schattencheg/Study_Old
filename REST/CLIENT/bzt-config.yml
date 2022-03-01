@@ -1,0 +1,10 @@
+execution: 
+   concurrency: 100 
+   hold-for: 2m30s
+   ramp-up: 1m
+   scenario:
+     requests:
+       - url: http://ip-addr:8000/users/
+         method: GET
+         label: api
+         timeout: 3s

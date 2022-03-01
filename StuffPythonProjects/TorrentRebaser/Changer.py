@@ -1,9 +1,14 @@
 import sys
 import os
+import re
 import glob
 import fileinput
 import shutil
-#from tqdm import tqdm
+from tqdm import tqdm
+
+d = dict()
+d['a'] = 1
+
 
 class Changer:
     constA = b"xkzS1Lpl3f7"#"2374849e"
@@ -12,20 +17,23 @@ class Changer:
     SToAOrAToS = "AllToM"
 
     def __init__(self, args):
+        self.prefix = "orno"
+        self.prefix = "asdfasdforno"
         self.moveFromDownloads()
+        self.moveFromFolder()
         if (len(args) == 1):
             self.SToAOrAToS = "AllToS"
         else:
             self.SToAOrAToS = args[1]
 
         lst = glob.glob("*.torrent")
-        for x in range(len(lst)):
+        for x in tqdm(range(len(lst))):
             filename = lst[x].split('\\')[-1]
-            os.rename(lst[x], lst[x].replace("orno",""))
-            lst[x] = lst[x].replace("orno","")
+            os.rename(lst[x], lst[x].replace(self.prefix,""))
+            lst[x] = lst[x].replace(self.prefix,"")
 
         total = 0
-        for x in lst:
+        for x in tqdm(lst):
             if self.SToAOrAToS.upper() == "ATOS":
                 total += self.AToS(x)
             if self.SToAOrAToS.upper() == "STOA":
@@ -36,6 +44,7 @@ class Changer:
                 total += self.AllToS(x)
             if self.SToAOrAToS.upper() == "ALLTOA":
                 total += self.AllToA(x)
+            self.find_image(x)
         print("DONE: ",total)
 
     def SToA(self, path):
@@ -67,8 +76,8 @@ class Changer:
         except OSError:
             pass
         filename = fileToSearch.split('\\')[-1]
-        os.rename(filename, filename.replace("orno",""))
-        filename = filename.replace("orno","")
+        os.rename(filename, filename.replace(self.prefix,""))
+        filename = filename.replace(self.prefix,"")
         filenamewo = ".".join(fileToSearch.split('\\')[-1].split(".")[0:-1])
         filenamew = path + filenamewo + ".torrent"
         if os.path.exists(filenamew):
@@ -85,11 +94,40 @@ class Changer:
         tempFile.close()
         return replaced
 
+    def moveFromFolder(self, path = "y:\\Soft\\Share\\temp"):
+        downloadsPath = path
+        currentPath = os.getcwd()
+        lst = glob.glob(downloadsPath + "\\*lab*.torrent")
+        lst = glob.glob(downloadsPath + "\\*.torrent")
+        for f in lst:
+            shutil.move(f, currentPath + "\\" + f.split("\\")[-1])
+
     def moveFromDownloads(self):
         downloadsPath = os.path.expanduser("~")+"\\Downloads"
         currentPath = os.getcwd()
         lst = glob.glob(downloadsPath + "\\*lab*.torrent")
         for f in lst:
             shutil.move(f, currentPath + "\\" + f.split("\\")[-1])
+
+    def find_image(self, filename):
+        return None
+        path = os.getcwd() + "\\temp\\"
+        try:
+            os.mkdir(path)
+            print("Created: ",path)
+        except OSError:
+            pass
+        filename = filename.split('\\')[-1]
+        inputFile = open( filename, 'rb+')
+
+        #(?=comment)(http.+)(?:created)
+        #pattern = re.compile("<(\d{4,5})>")
+        #for i, line in enumerate(open('test.txt')):
+        #    for match in re.finditer(pattern, line):
+        #        print 'Found on line %s: %s' % (i+1, match.group())
+
+
+        inputFile.close()
+        return None
 
 changer = Changer(sys.argv)
