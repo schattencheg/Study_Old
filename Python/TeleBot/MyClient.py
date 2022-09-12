@@ -12,17 +12,27 @@ import random
 import webbrowser
 import shutil
 from Joiner import Joiner
+from threading import Thread
 
 class MyClient(TelegramClient):
     def __init__(self):
         #self.EraseAllFolders()
-        while True:
+        if False:
             api_id = 10966915
             api_hash = '4b44f632cfdfc6171ed0456ad7b8497a'
             self.client = TelegramClient('session_name', api_id, api_hash)
             self.client.connect()
+            j = Joiner(self.client, 'urls.txt')        
+            j.evaluate()
+            #self.thread = Thread(target=j.evaluate)
+            #self.thread.start()
 
-            #j = Joiner(self.client, 'urls.txt')
+        while True:
+            #continue
+            api_id = 10966915
+            api_hash = '4b44f632cfdfc6171ed0456ad7b8497a'
+            self.client = TelegramClient('session_name', api_id, api_hash)
+            self.client.connect()
 
             with open('urls.txt','r', encoding="utf-8") as f:
                 self.urls = f.readlines()
@@ -44,7 +54,9 @@ class MyClient(TelegramClient):
             self.EraseThumbnails(dir)
 
     def EraseThumbnails(self, channel_name):
-        path = sanitize_filepath(os.path.join('Output\\Channels',channel_name))
+        if channel_name == 'c:\\prn\\ero':
+            channel_name = 'c_prn_ero'
+        path = sanitize_filepath(os.path.join('Output\\Channels',sanitize_filepath(channel_name)))
         if os.path.exists(path):
             onlyfiles = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and os.path.getsize(os.path.join(path, f)) > 0]
             onlydirs = [f for f in os.listdir(path) if os.path.isdir(os.path.join(path, f))]
@@ -68,25 +80,29 @@ class MyClient(TelegramClient):
         print('Total chats: {}'.format(len(channels)))
         prev_chat_name = ''
         total_downloaded = 0
-        #channels = [c for c in channels if 'мпя' in c.name.lower()]
+        #channels = [c for c in channels if 'мпя' in c_name.lower()]
         for c in tqdm(channels):
-            if 'мпябнб' in c.name:
+            c_name = c.name
+            if c_name == 'c:\\prn\\ero':
+                c_name = 'c_prn_ero'
+            if 'мпябнб' in c_name:
                 stop = True
             if prev_chat_name != '':
                 self.EraseThumbnails(prev_chat_name)
-            prev_chat_name = c.name.lower()
-            self.EraseThumbnails(c.name.lower())
+            prev_chat_name = c_name.lower()
+            self.EraseThumbnails(c_name.lower())
             try:
-                if 'таганрог' in c.name.lower() or 'торшер'  in c.name.lower() or 'тикток'  in c.name.lower() or 'tiktok' in c.name.lower():
+                if 'таганрог' in c_name.lower() or 'торшер'  in c_name.lower() or 'тикток'  in c_name.lower() or 'tiktok' in c_name.lower():
                     continue
                 #if c.entity.restricted:
                 #    continue
-                #print('{}\n\'{}\' : {}\n'.format(datetime.now(),c.name, mes_count[c.id]))
-                path = sanitize_filepath(os.path.join('Output\\Channels',c.name))
+                #print('{}\n\'{}\' : {}\n'.format(datetime.now(),c_name, mes_count[c.id]))
+                
+                path = sanitize_filepath(os.path.join('Output\\Channels',c_name))
                 if not os.path.exists(path):
                     os.makedirs(path)
-                if not c.name in self.thumb_dict:
-                    self.thumb_dict[c.name] = []
+                if not c_name in self.thumb_dict:
+                    self.thumb_dict[c_name] = []
                 lim = None
                 if False or c.id in mes_count:
                     lim = mes_count[c.id]
@@ -115,7 +131,7 @@ class MyClient(TelegramClient):
                 #    if 'contact' in dir(c):
                 #        p = c.contact.phone_number
                 mes_with_media = [x for x in mes if x.video != None]
-                #for m in tqdm(mes_with_media, desc = c.name):
+                #for m in tqdm(mes_with_media, desc = c_name):
                 downloaded_files = 0
                 new_files_path = os.path.join('Output',sanitize_filepath(str(datetime.now().date())))
                 if not os.path.exists(new_files_path):
@@ -133,7 +149,7 @@ class MyClient(TelegramClient):
                             fname = "{}{}".format(base_file_name,ext)
                             if not os.path.exists(os.path.join(path,fname)):
                                 t = m.download_media(thumb=-1, file=os.path.join(path,fname))
-                                shutil.copyfile(os.path.join(path,fname), os.path.join(new_files_path, base_file_name + '_' + c.name.lower() + '_' + str(downloaded_files) + ext))
+                                shutil.copyfile(os.path.join(path,fname), os.path.join(new_files_path, base_file_name + '_' + c_name.lower() + '_' + str(downloaded_files) + ext))
                                 downloaded_files += 1
                         elif duration > 60 * 60:
                             postfix = '_long'
@@ -152,7 +168,7 @@ class MyClient(TelegramClient):
                                 new_path = os.path.join(new_files_path + postfix, str(m.date).replace(':','_')[:7])
                                 if not os.path.exists(new_path):
                                     os.makedirs(new_path)                                
-                                shutil.copyfile(os.path.join(path + postfix,fname), os.path.join(new_path, base_file_name + '_' + c.name.lower() + '_' + str(downloaded_files) + ext))
+                                shutil.copyfile(os.path.join(path + postfix,fname), os.path.join(new_path, base_file_name + '_' + c_name.lower() + '_' + str(downloaded_files) + ext))
                                 downloaded_files += 1
                     except:
                         pass
@@ -197,7 +213,7 @@ class MyClient(TelegramClient):
                     sent_requests.append(link)
             
                     time.sleep(1)'''
-            self.EraseThumbnails(c.name.lower())
+            self.EraseThumbnails(c_name.lower())
         print('Downloaded {} files'.format(total_downloaded))
             
 start_time = datetime.now()
