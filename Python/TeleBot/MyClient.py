@@ -13,11 +13,13 @@ import webbrowser
 import shutil
 from Joiner import Joiner
 from threading import Thread
+#import logging
+#logging.basicConfig(level=logging.DEBUG)
 
 class MyClient(TelegramClient):
     def __init__(self):
         #self.EraseAllFolders()
-        if False:
+        if False:# or True:
             api_id = 10966915
             api_hash = '4b44f632cfdfc6171ed0456ad7b8497a'
             self.client = TelegramClient('session_name', api_id, api_hash)
@@ -54,8 +56,8 @@ class MyClient(TelegramClient):
             self.EraseThumbnails(dir)
 
     def EraseThumbnails(self, channel_name):
-        if channel_name == 'c:\\prn\\ero':
-            channel_name = 'c_prn_ero'
+        if '\\' in channel_name:
+            channel_name = channel_name.replace('\\','_').replace(':','_')
         path = sanitize_filepath(os.path.join('Output\\Channels',sanitize_filepath(channel_name)))
         if os.path.exists(path):
             onlyfiles = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f)) and os.path.getsize(os.path.join(path, f)) > 0]
@@ -83,6 +85,7 @@ class MyClient(TelegramClient):
         #channels = [c for c in channels if 'мпя' in c_name.lower()]
         for c in tqdm(channels):
             c_name = c.name
+            #continue
             if c_name == 'c:\\prn\\ero':
                 c_name = 'c_prn_ero'
             if 'мпябнб' in c_name:
@@ -92,7 +95,7 @@ class MyClient(TelegramClient):
             prev_chat_name = c_name.lower()
             self.EraseThumbnails(c_name.lower())
             try:
-                if 'таганрог' in c_name.lower() or 'торшер'  in c_name.lower() or 'тикток'  in c_name.lower() or 'tiktok' in c_name.lower():
+                if 'таганрог' in c_name.lower() or 'торшер'  in c_name.lower() or 'тикток'  in c_name.lower() or 'tiktok' in c_name.lower() or 'ополч' in c_name.lower():
                     continue
                 #if c.entity.restricted:
                 #    continue
@@ -164,7 +167,7 @@ class MyClient(TelegramClient):
                                     os.makedirs(path + postfix)
                                 if not os.path.exists(os.path.join(new_files_path + postfix)):
                                     os.makedirs(new_files_path + postfix)
-                                t = m.download_media(thumb=-1, file=os.path.join(path + postfix,fname))
+                                t = m.download_media(thumb=-1, file=os.path.join(path + postfix, fname))
                                 new_path = os.path.join(new_files_path + postfix, str(m.date).replace(':','_')[:7])
                                 if not os.path.exists(new_path):
                                     os.makedirs(new_path)                                
@@ -215,8 +218,20 @@ class MyClient(TelegramClient):
                     time.sleep(1)'''
             self.EraseThumbnails(c_name.lower())
         print('Downloaded {} files'.format(total_downloaded))
-            
+
+class TestClient(TelegramClient):
+    def __init__(self):
+        self.api_id = '10966915'
+        self.api_hash = '4b44f632cfdfc6171ed0456ad7b8497a'
+        self.client = TelegramClient('session_name', self.api_id, self.api_hash)
+        self.client.connect()
+        dialogs = self.client.iter_dialogs()
+        groups = [x for x in dialogs if x.is_group]
+        channels = [x for x in dialogs if x.is_channel]
+        print("Total groups {}, total channels {}".format(len(groups), len(channels)))
+
 start_time = datetime.now()
+#client = TestClient()
 client = MyClient()
 end_time = datetime.now()
 print('total runtime took {} sec'.format((end_time-start_time).total_seconds()))
